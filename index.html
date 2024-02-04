@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Page Navigation</title>
 </head>
 <body>
-    <audio src="audio/1.mp3" controls></audio>
+    <button onclick="navigateToPage('index1.html')">Page 1</button>
+    <button onclick="navigateToPage('index2.html')">Page 2</button>
+    <button onclick="navigateToPage('index3.html')">Page 3</button>
+    <button onclick="navigateToPage('index4.html')">Page 4</button>
+    <button onclick="navigateToPage('index5.html')">Page 5</button>
+
+    <script>
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
